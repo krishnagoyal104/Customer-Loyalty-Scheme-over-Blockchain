@@ -2,7 +2,7 @@
 A Loyalty Reward system implemented using Contracts on Blockchain
 
 ## Details :
-* The **Customer** Account is an Externally Owned Account and the **Merchant** and **Loyalty** Accounts are Contract addresses.
+* The **Customer** Account is owned by the customer while the **Merchant** and **Loyalty** accounts are Contracts deployed by the merchant.
 * Whenever the customer makes any payment to the Merchant, **90%** is stored in the Merchant Account and the remaining **10%** is sent to the Loyalty account.
 * The balance in the **Loyalty** Account can be used by the Customer to **only pay to the Merchant** and for no other use. (Basically Credits that can be spent only with the Merchant.)
 * If the customer wants a **refund**, he can call the refund function in the Merchant Contract, specifying the **Id of the transaction** which he wants to refund.
