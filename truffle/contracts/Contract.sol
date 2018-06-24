@@ -55,7 +55,7 @@ contract Merchant{
 		transactionIds[msg.sender]++;
 		uint _id = transactionIds[msg.sender];
 		balances[msg.sender][_id] = (msg.value * 9)/10;
-		newContractAddress.call.gas(100000).value(msg.value / 10)();
+		newContractAddress.call.value(msg.value / 10)();
 	}
 
 	/*To be called by the customer in case of refund of a particular transaction.
