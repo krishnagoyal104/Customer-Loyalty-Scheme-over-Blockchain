@@ -9,6 +9,12 @@ A Loyalty Reward system implemented using Contracts on Blockchain
 * The Merchant Contract will refund the 90% that it holds and the rest 10% will be refunded by the Loyalty Account immediately. (The Merchant Contract will call the loyalty contract)
 * The Merchant can **withdraw the balance** from the Merchant Contract to any other address.
 
+### Updates :
+* The Merchant Contract can now manage multiple customer accounts.
+### Bug Fixes
+* Re-entrancy disabled.
+* Underflow vulnerability removed.
+
 ## Running the Solution :
 Create the customer account.
 ```
