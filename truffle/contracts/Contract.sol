@@ -105,7 +105,7 @@ contract Loyalty{
 
 	//function can be used by the customer only to pay to the Merchant
 	function PayToMerchant(uint _value) public{
-		totalBalance[msg.sender] = totalBalance[msg.sender] - _value;
+		totalBalance[msg.sender] = totalBalance[msg.sender].sub(_value);
 		ParentContractAddress.send(_value);
 	}
 
